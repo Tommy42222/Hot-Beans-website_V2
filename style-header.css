@@ -1,0 +1,54 @@
+
+#header{
+    position: static;
+    background-color: aqua;
+    grid-area: h;
+    display: grid;
+    grid-template-areas: "logo title social";
+    grid-template-columns:125px 1fr 1fr ;
+    grid-template-rows: 80px;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+#header h1{
+
+    margin-left: 15px;
+    grid-area: title;
+    min-width: 300px;
+
+}
+#logo{
+    position: relative;
+    background-color: green;
+    grid-area: logo;
+
+}
+
+#logo img{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin-left:40px ;
+    margin-top: 15px;
+    box-shadow: black 0px 0px 10px;
+}
+
+#socials{
+    position: relative;
+    grid-area: social;
+    justify-self: end;
+    margin-right: 30px;
+    
+
+}
+
+#socials img{
+    
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    
+}
+

@@ -5,7 +5,12 @@
     <title>Hot Beans Company Website: HomePage</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-header.css" />
+    <link rel="stylesheet" href="style-nav.css" />
+    <link rel="stylesheet" href="style-main.css" />
+    <link rel="stylesheet" href="style-footer.css" />
+    <link rel="stylesheet" href="style-apply.css">
+    <link rel="" href="Images/">
   </head>
 
   <body>
@@ -13,33 +18,132 @@
     <div id="container">
 
         <div id="header">
-            <div id="title"><h1>Hot Beans Webpage</h1></div>
-            
-            <div id="logo">
-
+          <div id="logo">
+            <a href="index.html"><img src="apple.png" alt=""></a>
+          </div>
+            <div id="title">
+              <h1>Hot Beans Webpage</h1>
+              
             </div>
+            
         
             <div id="socials">
-                <a href=""><img src="facebook.png" alt=""></a>
-                <a href=""><img src="reddit.png" alt=""></a>
-                <a href=""><img src="linkedin.png" alt=""></a>
+                <a href=""><img src="facebook.jpg" alt=""></a>
+                <a href=""><img src="x.jpg" alt=""></a>
+                <a href=""><img src="linkedin.jpg" alt=""></a>
             </div>
         </div>
 
         <div id="nav">
+          <h3>Navigation</h3>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Apply</a></li>
-            <li><a href="">The Team</a></li>
-            <li><a href="">Training</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">contact us</a></li>
           </ul>
         </div>
 
-        <div id="content"
-    </div>
-        <div id="footer">
+        <div id="main"> 
 
+          <div id="pagetitle">
+            <h2>Main Home Page</h2>
+          </div>
+
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, deserunt? Aliquid, et perferendis quisquam voluptas dolorem quos. Consequatur ratione distinctio dolor odio, quae voluptates quasi? Veniam aspernatur hic unde optio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quia saepe iusto quidem suscipit recusandae obcaecati, consectetur corporis sed sunt molestias officia deleniti quas! Sit provident velit similique itaque! Repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, deserunt? Aliquid, et perferendis quisquam voluptas dolorem quos. Consequatur ratione distinctio dolor odio, quae voluptates quasi? Veniam aspernatur hic unde optio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quia saepe iusto quidem suscipit recusandae obcaecati, consectetur corporis sed sunt molestias officia deleniti quas! Sit provident velit similique itaque! Repellendus.</p>
+            
+          </div>
+    
+  
+          <button type="button" value="open" id="apply-button" onclick="openform()">Apply Here</button>
+
+
+            <div id="apply-form-container">
+              <div id="apply-form">
+                <div id="apply-title">
+                   <h1>Apply Here</h1></div>
+                <div id="personal-info">
+                <form>
+                  <label for="" class="field-title"><strong>Personal Information:</strong></label>
+                  <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                 
+                    <label for="lname">Last Name</label>
+                    <input type="email" name="lname"  id="lanme">
+                  </div> 
+
+                <div id="select">
+                  <label for="gender">Select your gender:</label>
+                  <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="male">Non-Binary</option>
+                    <option value="male">Other</option>
+                    <option value="male">Prefer not to say</option>
+                  </select>
+
+                </div>
+                <div>
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" name="dob" id="dob">
+                </div>
+              </div>
+              <div>
+                <div id="contact-info">
+                <div>
+                  <label for="contact info" class="field-title"><strong>Contact Info:</strong></label>
+                </div>
+             
+                  <label for="Phone-Number">Phone-Number</label>
+                  <input type="text" id="Phone-Number" name="Phone-Number">
+               
+                  <label for="emal">Email</label>
+                  <input type="email" name="email" id="email">
+                </div>
+              </div>
+              <div id="file-upload">
+                <label for="" class="field-title"><strong>File Upload:</strong></label>
+                
+                <div>
+                  <label for="cv">Upload your CV here: </label>  
+                  <input type="file">
+                </div>
+                <div>
+                  <label for="cv">Upload your CL here: </label>  
+                  <input type="file">
+                </div>
+              
+
+                <div id="submit-button">
+                 <input type="button" value="Submit Application">
+                </div>
+                </form>
+              </div>
+
+              </div>
+              <button type="button" value="close" id="close-button" onclick="closeform()">Close popup</button>
+            </div>
+
+       
+          
+        </div>
+        
+        <div id="footer">
+          <div id="links">
+           <a href="index.html">Home </a> |
+     
+           <a href="team.html">The Team</a> |
+           <a href="training.html">Training</a> |
+           <a href="faq.html">FAQ</a> |
+           <a href="contact.html">contact us</a>
+          </ul>
+          </div>
         </div>
     </div>
 
@@ -47,4 +151,5 @@
 
 
   </body>
+  <script src="script.js"></script>
 </html>

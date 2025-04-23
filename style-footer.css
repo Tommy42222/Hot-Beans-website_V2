@@ -1,0 +1,14 @@
+
+#footer{
+    background-color: greenyellow;
+    grid-area: f;
+
+}
+
+#links{
+    position:relative ;
+    text-align: center;
+    bottom: -30px;
+
+}
+
