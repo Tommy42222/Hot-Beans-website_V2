@@ -4,7 +4,8 @@
 
 
 body{
-    margin: 0px;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 img{
@@ -98,8 +99,65 @@ img{
 }
 
 
+#training-container{
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    padding-left: 20px;
+    min-width: 200px;
+    grid-auto-flow: row;
+}
+
+.training{
+    display: grid;
+    grid-template: 
+    "t p" auto
+    "b p" auto;
+    grid-template-columns: 150px minmax(80px auto);
+    margin: 20px 10px;
+    
+  
+}
+
+.training p{
+    grid-area: p;
+    margin-left: 5px;
+    text-align: start;
+    
+}
+
+.training a{
+    margin-top: 5px;
+    grid-area: t;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: start;
+    order: 2;
+    
+}
+
+.training h2{
+    grid-area:t;
+    order: 1;
+    text-align: start;
 
 
 
+}
 
+@media (max-width: 1000px) {
+    #training-container{
+        grid-template-columns: repeat(1, minmax(80px, 80vw));
+        grid-template-rows: repeat(4 auto);
 
+    }
+}
+
+@media (max-width: 1000px) {
+    .training{
+
+        grid-template-columns: minmax(150px, 300px) auto;
+        grid-template-rows: minmax(150px, auto)  auto;
+        margin-top: -10px;
+    }
+
+}

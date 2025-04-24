@@ -117,3 +117,22 @@ input{
 #apply-form label{
     font-weight: 600;
 }
+
+@media (max-width: 650px) {
+    #apply-form-container{
+    scale: 90%;
+    top: 40vh;
+    
+    }
+
+}
+
+@media (max-width: 650px) {
+    input[type="text"]{
+
+        width: 70px;
+    
+    
+    }
+
+}
