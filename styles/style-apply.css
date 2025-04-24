@@ -90,7 +90,7 @@ input{
     scale: 125%;
     bottom: 10px;
     z-index: 2000;
-    left: 50%;
+    left: 50vw;
 }
 
 #close-button:hover{
