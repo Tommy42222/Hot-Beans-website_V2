@@ -1,0 +1,22 @@
+
+
+#nav{
+    background-color: red;
+    grid-area: n;
+    
+    
+}
+
+#nav h3{
+    position: relative;
+
+    padding-left: 25px;
+    font: size 24px; ;
+}
+
+#nav a{
+    display: inline-block;
+    background-color: aliceblue;
+    padding: 5px;
+    margin-top: 10px;
+}
