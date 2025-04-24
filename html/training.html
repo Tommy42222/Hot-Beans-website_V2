@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--COMMENT IMPORTANT STUFF!!!!-->
+  <head>
+    <title>Hot Beans Company Website: HomePage</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/style-header.css" />
+    <link rel="stylesheet" href="../styles/style-nav.css" />
+    <link rel="stylesheet" href="../styles/style-main.css" />
+    <link rel="stylesheet" href="../styles/style-footer.css" />
+    <link rel="stylesheet" href="../styles/style-apply.css" />
+    <link rel="" href="Images/">
+  </head>
+
+  <body>
+  
+    <div id="container">
+
+        <div id="header">
+          <div id="logo">
+            <a href="index.html"><img src="../images/apple.png" alt=""></a>
+          </div>
+            <div id="title">
+              <h1>Hot Beans Webpage</h1>
+              
+            </div>
+            
+        
+            <div id="socials">
+                <a href=""><img src="../images/facebook.jpg" alt=""></a>
+                <a href=""><img src="../images/x.jpg" alt=""></a>
+                <a href=""><img src="../images/linkedin.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div id="nav">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="training.html" class="active">Training</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">contact us</a></li>
+          </ul>
+        </div>
+
+        <div id="main"> 
+
+          <div id="pagetitle">
+            <h2>Training we offer</h2>
+          </div>
+
+          <div class="content">
+            <div id="training-container">
+              <div class="traning one">
+                <h2>text</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, ullam tenetur error tempore cumque aut sapiente veniam, hic eos similique dolore accusantium facilis labore facere modi, ad praesentium numquam obcaecati?</p>
+                <a href=""> click for link</a>
+              </div>
+            </div>
+          </div>
+    
+  
+          <button type="button" value="open" id="apply-button" onclick="openform()">Apply Here</button>
+
+
+            <div id="apply-form-container">
+              <div id="apply-form">
+                <div id="apply-title">
+                   <h1>Apply Here</h1></div>
+                <div id="personal-info">
+                <form>
+                  <label for="" class="field-title"><strong>Personal Information:</strong></label>
+                  <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                 
+                    <label for="lname">Last Name:</label>
+                    <input type="email" name="lname"  id="lanme">
+                  </div> 
+
+                <div id="select">
+                  <label for="gender">Select your gender:</label>
+                  <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="male">Non-Binary</option>
+                    <option value="male">Other</option>
+                    <option value="male">Prefer not to say</option>
+                  </select>
+
+                </div>
+                <div>
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" name="dob" id="dob">
+                </div>
+              </div>
+              <div>
+                <div id="contact-info">
+                <div>
+                  <label for="contact info" class="field-title"><strong>Contact Info:</strong></label>
+                </div>
+             
+                  <label for="Phone-Number">Phone-Number:</label>
+                  <input type="text" id="Phone-Number" name="Phone-Number">
+               
+                  <label for="emal">Email:</label>
+                  <input type="email" name="email" id="email">
+                </div>
+              </div>
+              <div id="file-upload">
+                <label for="" class="field-title"><strong>File Upload:</strong></label>
+                
+                <div>
+                  <label for="cv">Upload your CV here: </label>  
+                  <input type="file">
+                </div>
+                <div>
+                  <label for="cv">Upload your CL here: </label>  
+                  <input type="file">
+                </div>
+              
+
+                <div id="submit-button">
+                 <input type="button" value="Submit Application">
+                </div>
+
+                </form>
+              </div>
+
+              </div>
+              <button type="button" value="close" id="close-button" onclick="closeform()">Close form</button>
+            </div>
+
+       
+          
+        </div>
+        
+        <div id="footer">
+          <div id="links">
+           <a href="index.html">Home </a> |
+           <a href="team.html" >The Team</a> |
+           <a href="training.html" class="active">Training</a> |
+           <a href="faq.html">FAQ</a> |
+           <a href="contact.html">contact us</a>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+
+
+
+  </body>
+  <script src="../js/script.js"></script>
+</html>
