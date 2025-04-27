@@ -8,14 +8,10 @@ body{
     overflow-x: hidden;
 }
 
-img{
-    
-}
 
 
-#pagetitle{
-    text-align: center;
-}
+
+
 
 #container{
     display: grid;
@@ -38,9 +34,7 @@ img{
 
 
 
-
-#team-container{
-   
+#team-container {
     display: grid;
     position: relative;
     grid-column: auto;
@@ -51,50 +45,50 @@ img{
     margin-right: 10px;
     grid-gap: 30px;
     justify-content: center;
-
-    
 }
 
-
-
-.team{
+#team-container p {
     display: inline-block;
-
-    
-}
-
-#team-container p{
-
-    display: inline-block;
-
     margin: 0px 10px;
     min-height: 150px;
-    color: white;
-    
+    color: white; 
 }
 
-#team-container img{
-    display: inline-block;
-    position: relative;
-    height: 150px;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    top: 25%;
-    padding-bottom: 20px;
-    
-    
-}
-
-#team-container h2{
+#team-container h2 {
     margin-top: 5px;
     text-align: center;
 }
 
 
+#team-container img {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    transform: translate(-50%, -50%);
+    top: 100px;
+    border: black solid 2px;
+    border-radius: 15%;
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.team:hover {
+    transform: scale(1.1);
+}
+
+.team {
+    display: inline-block;
+    border: black solid 5px;
+    border-radius: 50px;
+    padding: 25px;
+    margin-top: 10px; 
+    transform: scale(1);  
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
 
-
-@media (min-width: 830px) {
+@media (min-width: 960px) {
     #team-container{
         grid-template-columns: repeat(3, 25vw)
         
@@ -115,15 +109,21 @@ img{
     display: grid;
     grid-template: 
     "t p" auto
-    "b p" auto;
+    "t p" auto;
     grid-template-columns: 150px minmax(80px auto);
-    margin: 20px 10px;
+    margin: 20px;
+
     border: solid black 3px;
     border-radius: 20px;
     padding: 15px;
     box-shadow: black -5px -0px 10px inset;
-    
+    transform: scale(1); 
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   
+}
+
+.training:hover{
+    transform: scale(1.1);
 }
 
 .training p{
@@ -133,12 +133,14 @@ img{
     
 }
 
+
+
 .training a{
     margin-top: 5px;
     grid-area: t;
     flex-direction: column;
     align-self: flex-end;
-    text-align: start;
+    text-align: center;
     order: 2;
     
 }
@@ -148,9 +150,9 @@ img{
     order: 1;
     text-align: start;
 
-
-
 }
+
+
 
 @media (max-width: 1000px) {
     #training-container{
@@ -163,13 +165,18 @@ img{
 @media (max-width: 1000px) {
     .training{
         
-        grid-template-columns: minmax(150px, 300px) auto;
+        grid-template-columns: minmax(150px, 300px) minmax(minmax(150px, 300px), 300px);
         grid-template-rows: minmax(150px, auto)  auto;
         margin-top: -10px;
     }
 
 }
 
+@media (max-width: 500px) {
+    .training h2{
+        font-size: medium;
+    }
+}
 
 #fqa-container{
     display: flex;
@@ -191,6 +198,7 @@ img{
 #fqa-container p{
     display: inline-block;
     padding: 3px 15vw;
+    background-color: aqua;
 
 }
 
@@ -199,14 +207,6 @@ img{
     width: 40vw;
 }
 
-.description{
-   
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-top: -40px;
-    
-   
-}
 
 .question{
     display: inline-block;
@@ -236,4 +236,27 @@ img{
 
 #contact-container{
     background-color:aquamarine
+}
+
+#pagetitle h2{
+    
+    padding-bottom: 30px;
+    margin-top: 0px !important; 
+    margin-bottom: 0px ;
+    text-align: center;
+    background-color: rgb(226, 44, 208);
+}
+
+.description{
+    margin: 0px 30px 0px!important;
+    text-align: center;
+    background-color: red;
+    padding-top: 0px;
+    display: inline-block;
+    padding: 5px;
+    
+    
+    
+   
+  
 }
