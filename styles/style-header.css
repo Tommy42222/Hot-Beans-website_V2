@@ -21,10 +21,7 @@
     min-width: 300px;
 
 }
-#logo{
-
-    
-    
+#logo{    
 
 }
 
@@ -35,6 +32,7 @@
     box-shadow: black 0px 0px 10px;
     border: solid black 1px;
     border-radius: 10px;
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #socials{
@@ -44,8 +42,13 @@
     justify-self: end;
     margin-right: 10px;
     min-width: 100px;
+
     
 
+}
+
+#logo :hover{
+    transform: scale(1.1);
 }
 
 #socials img{
@@ -54,6 +57,8 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
+    transition: transform 0.2s ease-in-out;
+        box-shadow: black 0px 0px 1px;
     
     
 }

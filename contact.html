@@ -21,64 +21,128 @@
             <a href="index.html"><img src="../images/Logo/Hot Beans2.png" alt=""></a>
           </div>
             <div id="title">
-              
+
               
             </div>
             
         
             <div id="socials">
-              <a href="facebook.com"><img src="../images/facebook.jpg" alt=""></a>
-              <a href="x.com"><img src="../images/x.jpg" alt=""></a>
-              <a href="linkedin.com"><img src="../images/linkedin.jpg" alt=""></a>
-          </div>
+                <a href="facebook.com"><img src="../images/facebook.jpg" alt=""></a>
+                <a href="x.com"><img src="../images/x.jpg" alt=""></a>
+                <a href="linkedin.com"><img src="../images/linkedin.jpg" alt=""></a>
+            </div>
         </div>
 
         <div id="nav">
           <h3>Navigation</h3>
-          
           <ul>
-            
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html" >Home</a></li>
             <li><a href="team.html">The Team</a></li>
             <li><a href="training.html">Training</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">contact us</a></li>
+            <li><a href="contact.html"  class="active">contact us</a></li>
           </ul>
         </div>
 
         <div id="main"> 
 
           <div id="pagetitle">
-            <h2>Main Home Page</h2>
+            <h2>How To Contact Us</h2>
           </div>
 
           <div class="content">
-            <div id="home-hero">
-            <h2>Building websites that matter</h2>
-            <p><em id="intro1">“Custom web design, development, and digital solutions for businesses large and small.</em></p>
-            <p id="intro2"><em>Hot Beans is a passionate web development company dedicated to building beautiful, responsive websites that stand out. We combine bold design with clean code to create fast, user-friendly digital experiences that help your brand shine. Whether you’re starting fresh or leveling up, we’re here to bring your vision to life!</em></p>
-          </div>
+            <div id="contact-container">
+         
+              <p class="description">If you want to get in touch. You can reach out through our contact form, send us an email, or give us a call. Whether it’s a big idea or a quick question, the Hot Beans team is ready to help. Get in touch today!</p>
+              
+              <div class="form">
+                <div id="contact-form">
+              <div id="form-title">
+                <h3>Contact Form</h3>
+              </div>
+             
+              <form>
+                <div>
+                <label for="name"> Name:</label>
+                <input type="text" id="contact-name">
+                </div>
+                <div>
+                <label for="email">Email address</label>
+                <input type="text">
+              </div>
+                <div id="contact-select">
+                <label for="reason">Puppose of message*</label>
+                <select name="reason" id="reason">
+                  <option value="Question/Query">Question/Enquiry</option>
+                  <option value="Business-related">Business-related</option>
+                  <option value="Report/Complaint">Report/Complaint</option>
+                  <option value="Review" >Review</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div id="messagebox">
+                <label for="message">Message</label>
+                <textarea type="text" rows="3" cols="30" id="contact-message"> </textarea>
+                </div>
+                <div id="contact-button">
+                  <button>Send Message</button>
+                </div>
+                </form>
+              </div>
+              </div>
 
-          <div id="home-info">
-          <div id="home-what-do">
-           
-            <h3>What we Do?</h3>
-            <p>“At Hot Beans, we turn ideas into powerful online experiences. Whether you’re launching a startup or refreshing your brand, our team delivers websites that are fast, beautiful, and built for results.”</p>
-          </div>
-          
-          <div id="home-hiring">
-          <h3>Good News We are Hiring! — Join the Hot Beans Team!</h3>
-          <p>Hot Beans is expanding, and we’re on the lookout for fresh talent to join our creative crew. Whether you’re a seasoned developer, a rising designer, or just starting your journey in web development, we’d love to hear from you. If you’re passionate about building great websites and growing your skills in a supportive, fast-paced environment, check out our current openings and <strong>apply today!</strong></p>
-          </div>
-          </div>
-        </div>
-    
+
+
+              <div id="other-contact-options">
+                <p>If you want to contact us through more traditional means. The information can be found below.</p>
+                  
+                <div id="comp-email">
+                  <h3>Our Company Email Address</h3>
+                  <p id="info">contact@hotbeansdev.com</p>
+                </div>
+
+                <div id="comp-number">
+                <h3>Our Company Telephone Number</h3>
+                <p class=info>0118 999 881 999 119 7253</p> 
+              </div>  
+              
+
+              <div id="comp-mailing">
+
+                <h3>Our offices Mailling address</h3>
+                <p class="info">Whitehaven Mansions <br>
+                  56B Sandhurst Square <br>
+                  London               <br>
+                  W1B 5EL              <br>
+                  United Kingdom</p> 
+                </div>
+
+                <div id="google-map-title">
+                  <h3>Where we are located</h3>
+                </div>
+               
+                <div id="googleMap" style="width:300px;height:300px;"></div>
+
+                <script>
+                function myMap() {
+                var mapProp= {
+                  center:new google.maps.LatLng(51.6387845,-0.0422671),
+                  zoom:16,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLJkjDMqTrLsfcxK7QsJtgbvorCWIji5o&callback=myMap"></script>
+              </div>
+            </div>
+            
   
           <button type="button" value="open" id="apply-button" onclick="openform()">Apply Here</button>
 
 
             <div id="apply-form-container">
-              <div id="apply-form">
+              <div id="apply-form" class="form">
                 <div id="apply-title">
                    <h1>Apply Here</h1></div>
                 <div id="personal-info">
@@ -148,18 +212,19 @@
        
           
         </div>
-        
+      </div>
+
         <div id="footer">
           <div id="links">
-           <a href="index.html" class="active">Home </a> |
-           <a href="team.html">The Team</a> |
-           <a href="training.html">Training</a> |
+           <a href="index.html">Home </a> |
+           <a href="team.html" >The Team</a> |
+           <a href="training.html" >Training</a> |
            <a href="faq.html">FAQ</a> |
-           <a href="contact.html">contact us</a>
+           <a href="contact.html"  class="active">contact us</a>
           </ul>
           </div>
         </div>
-    </div>
+   
 
 
 
