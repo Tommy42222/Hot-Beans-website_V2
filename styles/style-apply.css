@@ -20,6 +20,8 @@ input{
 
 
 #apply-form-container{
+    transition: transform 0.4s;
+    transform-origin: center;
     display:none ;
     width: 80vw;
     max-width: 800px; 
@@ -35,6 +37,7 @@ input{
     z-index: 1000;
     margin-top: 20px;
     box-shadow: 2px 2px 20px rgb(79, 83, 84);
+
 
 }
 #apply-title{
@@ -136,3 +139,33 @@ input{
     }
 
 }
+
+@media (max-height: 550px) {
+    #apply-form-container {
+        transform-origin: center center;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+@media (max-height: 450px) {
+    #apply-form-container {
+        transform-origin: center center;
+        transform: translate(-50%, -50%) scale(0.65);
+    }
+}
+
+
+@media (max-height: 350px) {
+    #apply-form-container {
+        transform-origin: center center;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
+
+@media (max-height: 270px) {
+    #apply-form-container {
+        transform-origin: center center;
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+}
+
