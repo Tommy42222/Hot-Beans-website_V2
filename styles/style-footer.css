@@ -1,8 +1,8 @@
 
 #footer{
     z-index: 10;
-    background-color: rgb(247, 239, 246);
-    box-shadow: black 5px 5px 15px;
+    background-color: rgb(229, 218, 227);
+    box-shadow: rgba(0, 0, 0, 0.836) 0px -2px 15px;
     grid-area: f;
 
 }
