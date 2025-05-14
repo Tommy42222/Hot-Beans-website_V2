@@ -12,6 +12,39 @@ body{
 
 
 
+#home-hero h2{
+    margin-top: 10px;
+    font-size: 300%;
+    padding-left: 30px;
+    
+}
+
+#home-hero p{
+    margin-top: -30px;
+    margin-left: 50px;
+    
+}
+
+#home-what-do{
+    display: block;
+    padding-top: 5px;
+    margin-top: 45vh;
+    text-align: center;
+}
+
+#home-info {
+    background-color: rebeccapurple;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+#home-hiring{
+     display: block;
+    background-color: ;
+    padding-top: 5vh;
+    text-align: center;
+    padding-right: 30px;
+}
 
 #container{
     display: grid;
