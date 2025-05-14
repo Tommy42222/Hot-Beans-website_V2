@@ -18,10 +18,10 @@
 
         <div id="header">
           <div id="logo">
-            <a href="index.html"><img src="../images/apple.png" alt=""></a>
+            <a href="index.html"><img src="../images/Logo/Hot Beans2.png" alt=""></a>
           </div>
             <div id="title">
-              <h1>Hot Beans Webpage</h1>
+
               
             </div>
             
@@ -56,7 +56,8 @@
               <p class="description">If you want to get in touch. You can reach out through our contact form, send us an email, or give us a call. Whether it’s a big idea or a quick question, the Hot Beans team is ready to help. Get in touch today!</p>
               
               <div class="form">
-              <div id="form title">
+                <div id="contact-form">
+              <div id="form-title">
                 <h3>Contact Form</h3>
               </div>
              
@@ -64,8 +65,8 @@
                 <div>
                 <label for="name"> Name:</label>
                 <input type="text" id="contact-name">
-              </div>
-              <div>
+                </div>
+                <div>
                 <label for="email">Email address</label>
                 <input type="text">
               </div>
@@ -79,10 +80,18 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
+              <div id="messagebox">
                 <label for="message">Message</label>
-                <input type="text" id="contact-message">
+                <textarea type="text" rows="3" cols="30" id="contact-message"> </textarea>
+                </div>
+                <div id="contact-button">
+                  <button>Send Message</button>
+                </div>
                 </form>
               </div>
+              </div>
+
+
 
               <div id="other-contact-options">
                 <p>If you want to contact us through more traditional means. The information can be found below.</p>
@@ -107,6 +116,24 @@
                   W1B 5EL              <br>
                   United Kingdom</p> 
                 </div>
+
+                <div id="google-map-title">
+                  <h3>Where we are located</h3>
+                </div>
+               
+                <div id="googleMap" style="width:300px;height:300px;"></div>
+
+                <script>
+                function myMap() {
+                var mapProp= {
+                  center:new google.maps.LatLng(51.6387845,-0.0422671),
+                  zoom:16,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLJkjDMqTrLsfcxK7QsJtgbvorCWIji5o&callback=myMap"></script>
               </div>
             </div>
             

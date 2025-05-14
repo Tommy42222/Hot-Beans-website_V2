@@ -1,7 +1,9 @@
 
 #header{
+       background-color: rgb(247, 239, 246);
     position: static;
-    background-color: aqua;
+    z-index: 50;
+    box-shadow: 0px 2px 15px black;
     grid-area: h;
     display: grid;
     grid-template-areas: "logo title social";
@@ -20,23 +22,19 @@
 
 }
 #logo{
-    background-color: black;
+
     
     
 
 }
 
 #logo img{
+    height: 60px;
     position: relative;
-    height: 50px;
-    width: 50px;
-    margin-left:40px ;
-    margin-top: 15px;
+    margin-left:21px;
     box-shadow: black 0px 0px 10px;
     border: solid black 1px;
     border-radius: 10px;
-
-    background-color: black;
 }
 
 #socials{
@@ -44,7 +42,7 @@
     position: absolute;
     grid-area: social;
     justify-self: end;
-    margin-right: px;
+    margin-right: 10px;
     min-width: 100px;
     
 
