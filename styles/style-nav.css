@@ -1,8 +1,11 @@
 
 
 #nav{
-    background-color: red;
+    background-color: rgb(241, 67, 67);
+    z-index: 1;
     grid-area: n;
+    box-shadow: black 0px 10px 25px
+    
 
     
     
@@ -10,9 +13,10 @@
 
 #nav h3{
     position: relative;
-
+    margin-top: 10px;
     padding-left: px;
     font-size: 24px; ;
+    text-align: center;
 }
 
 #nav a{

@@ -1,6 +1,8 @@
 
 #footer{
-    background-color: greenyellow;
+    z-index: 10;
+    background-color: rgb(247, 239, 246);
+    box-shadow: black 5px 5px 15px;
     grid-area: f;
 
 }
