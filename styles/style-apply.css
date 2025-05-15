@@ -13,13 +13,13 @@
 }
 
 
-input{
+input{ /* input fields*/
     margin: 8px 0px;
     padding: 3px;
 }
 
 
-#apply-form-container{
+#apply-form-container{ /*Form container*/
     transition: transform 0.4s;
     transform-origin: center;
     display:none ;
@@ -40,31 +40,28 @@ input{
 
 
 }
-#apply-title{
+#apply-title{ /*Form title*/
     position: relative;
     text-align: center;margin-top: -25px;
     scale: 120%;
     text-shadow: rgb(187, 231, 237) 2px 2px 20px;
 }
 
-.field-title{
+.field-title{ /*input type title*/
     display: block;
     border-top: 3px black dotted;
     margin: 5px 0px;
     color: rgb(13, 87, 207);
- 
-   
-    
 }
 
 
 
-#file-upload input{
+#file-upload input{ /*file upload buttons*/
     margin-top: -3px;
 }
 
    
-#close-button{
+#close-button{ /*close form button*/
     display: none;
     background-color: rgb(17, 108, 255);
     color: white;
@@ -81,7 +78,7 @@ input{
    
 }
 
-#apply-button{
+#apply-button{ /*open form button*/
     background-color: rgb(17, 108, 255);
     color: white;
     border: solid rgb(101, 32, 32) 1px;
@@ -96,73 +93,68 @@ input{
     left: 50vw;
 }
 
-#close-button:hover{
+#close-button:hover{ /*close button when hovered*/
     background-color: brown;
 }
 
-#close-button:active{
+#close-button:active{ /*close button when clicked*/
     background-color: yellow;
 }
-#submit-button{
 
+#submit-button{ /*submit form button*/
     scale: 125%;
     position: relative;
     left: 80px;
     margin-left: 20px;
-    padding: 3px;
-    
+    padding: 3px; 
 }
 
-#apply-form{
+#apply-form{ /*top of form*/
     margin-top: 5px;
 }
 
-#apply-form label{
+#apply-form label{ /*form lables*/
     font-weight: 600;
 }
 
-@media (max-width: 650px) {
+
+
+@media (max-width: 650px) { /* scales with window width*/
     #apply-form-container{
     scale: 90%;
     top: 40vh;
-    
     }
-
 }
 
-@media (max-width: 650px) {
+
+@media (max-width: 650px) { /* scales with window width*/
     input[type="text"]{
-
-        width: 70px;
-    
-    
+        width: 70px
     }
-
 }
 
-@media (max-height: 550px) {
+@media (max-height: 550px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
         transform: translate(-50%, -50%) scale(0.8);
     }
 }
 
-@media (max-height: 450px) {
+@media (max-height: 450px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
         transform: translate(-50%, -50%) scale(0.65);
     }
 }
 
-
-@media (max-height: 350px) {
+@media (max-height: 350px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
         transform: translate(-50%, -50%) scale(0.5);
     }
 }
 
-@media (max-height: 270px) {
+@media (max-height: 270px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
         transform: translate(-50%, -50%) scale(0.4);
