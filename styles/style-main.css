@@ -233,30 +233,38 @@ body{ /*prevents overflow*/
 
 #video-continer{
     display: inline-block;
-    background-color: red;
-   margin-left: 25%;
+     background: #EEAECA;
+    background: radial-gradient(circle, rgb(255, 171, 208) 17%, rgba(177, 183, 223, 1) 81%, #c0ddff 100%);
+    padding: 20px;
+    margin-left: 25%;
     border: black solid 2px;
     border-radius: 25px;
+    box-shadow: 0px 0px 5px black,;
+    
 }
 
 #video-continer h3{
+    display: inline;
+    padding:10px;
+    text-align: center;  
+    background-color: white;
+    border: 1px solid black;
+     border-radius: 20px 20px 0px 0px;
+     margin-bottom: 5px;
+     box-shadow: 0px 0px 2px black inset;
 
-    background-color: rgb(0, 255, 204);
-    display: inline-block;
-    margin-left: 25px;
-   
 }
 
 
 .video{
 
-  
-   background-color: blue;
+
   
 }
 
 .videos iframe{
     background-color: green;
+    margin-bottom: 10px;
 }
 /*--------------- FAQ --------------------------*/
 
