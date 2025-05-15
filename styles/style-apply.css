@@ -8,8 +8,6 @@
 
 .field-title{
     font-size: 30px;
-    
-    
 }
 
 
@@ -132,6 +130,9 @@ input{ /* input fields*/
         width: 70px
     }
 }
+
+
+/*----------------------------------------------------------------*/
 
 @media (max-height: 550px) { /* scales with window height*/
     #apply-form-container {
