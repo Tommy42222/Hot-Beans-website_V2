@@ -345,6 +345,30 @@ body{ /*prevents overflow*/
 }
 
 
+table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+  box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.467);
+  text-align: center;
+
+
+}
+
+th {
+    background-color: rgb(34, 109, 238);
+    box-shadow: 0px 0px 1px inset black;
+}
+
+td{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 2px inset rgb(72, 72, 72);
+    padding: 5px;
+
+}
+
+table{
+
+}
 
 @media (max-width: 750px){ /**/
     #contact-form{
