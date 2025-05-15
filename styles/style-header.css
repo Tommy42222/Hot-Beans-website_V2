@@ -1,5 +1,5 @@
 
-#header{
+#header{ /*creates a 1x3 css grid for place the logo, page tile, and social links in*/
        background-color: rgb(247, 239, 246);
     position: static;
     z-index: 50;
@@ -13,31 +13,24 @@
     grid-auto-flow: column;
 }
 
-#header h1{
-    position: relative;
-    display: inline-block;
-    left: 15px;
-    grid-area: title;
-    min-width: 300px;
 
-}
-#logo{
 
-    
-    
-
-}
-
-#logo img{
+#logo img{ /* Company logo*/
     height: 60px;
     position: relative;
     margin-left:21px;
     box-shadow: black 0px 0px 10px;
     border: solid black 1px;
     border-radius: 10px;
+    transition: transform 0.1s ease-in-out;
 }
 
-#socials{
+
+#logo :hover{ /* Company logo when hovered over*/
+    transform: scale(1.1);
+}
+
+#socials{ /*social links container*/
     display: inline-block;
     position: absolute;
     grid-area: social;
@@ -48,8 +41,7 @@
 
 }
 
-#socials img{
-    
+#socials img{ /*solcail links images*/
     border: 2px solid black;
     border-radius: 50%;
     width: 30px;
