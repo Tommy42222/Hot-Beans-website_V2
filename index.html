@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--COMMENT IMPORTANT STUFF!!!!-->
+  <!-- header-->
   <head>
     <title>Hot Beans Company Website: HomePage</title>
     <meta charset="UTF-8" />
@@ -14,30 +14,25 @@
 
   <body>
   
-    <div id="container">
 
-        <div id="header">
-          <div id="logo">
+    <div id="container"> <!-highest level container->
+        <div id="header"> <!-Header container->
+
+          <div id="logo"> <!-Hot Beans company logo->
             <a href="index.html"><img src="images/Logo/Hot Beans2.png" alt=""></a>
           </div>
-            <div id="title">
-              
-              
-            </div>
-            
+
         
-            <div id="socials">
+            <div id="socials"> <!-Social media links->
               <a href="facebook.com"><img src="images/facebook.jpg" alt=""></a>
               <a href="x.com"><img src="images/x.jpg" alt=""></a>
               <a href="linkedin.com"><img src="images/linkedin.jpg" alt=""></a>
           </div>
         </div>
 
-        <div id="nav">
-          <h3>Navigation</h3>
-          
+        <div id="nav">  <!-Side Navigation container->
+          <h3>Navigation</h3> 
           <ul>
-            
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="team.html">The Team</a></li>
             <li><a href="training.html">Training</a></li>
@@ -46,20 +41,23 @@
           </ul>
         </div>
 
-        <div id="main"> 
+        <div id="main">  <!-Main content container->
 
-          <div id="pagetitle">
+          <div id="pagetitle">  <!-Page title->
             <h2>Main Home Page</h2>
           </div>
 
-          <div class="content">
-            <div id="home-hero">
+          <div class="content">  <!-Sub content container->
+
+
+            <div id="home-hero"> <!-Main content->
             <h2>Building websites <br> that <u> Matter</u></h2>
             <p><em id="intro1">“Custom web design, development, and digital solutions for businesses large and small.</em></p>
             <p id="intro2"><em>Hot Beans is a passionate web development company dedicated to building beautiful, responsive websites that stand out. We combine bold design with clean code to create fast, user-friendly digital experiences that help your brand shine. Whether you’re starting fresh or leveling up, we’re here to bring your vision to life!</em></p>
           </div>
 
-          <div id="home-info">
+          
+          <div id="home-info"> <!-Extra information for the user->
           <div id="home-what-do">
            
             <h3>What we Do?</h3>
@@ -77,12 +75,13 @@
           <button type="button" value="open" id="apply-button" onclick="openform()">Apply Here</button>
 
 
-            <div id="apply-form-container">
+            <div id="apply-form-container"> <!- Apply pop up form container ->
               <div id="apply-form">
-                <div id="apply-title">
+                <div id="apply-title"> <!- Apply pop up form title ->
                    <h1>Apply Here</h1></div>
                 <div id="personal-info">
-                <form>
+
+                <form> <!- Apply Form Start ->
                   <label for="" class="field-title"><strong>Personal Information:</strong></label>
                   <div>
                     <label for="fname">First Name:</label>
@@ -92,7 +91,7 @@
                     <input type="text" name="lname"  id="lanme">
                   </div> 
 
-                <div id="select">
+                <div id="select"> <!- Selection Box with 5 options ->
                   <label for="gender">Select your gender:</label>
                   <select name="gender" id="gender">
                     <option value="male">Male</option>
@@ -124,7 +123,7 @@
               <div id="file-upload">
                 <label for="" class="field-title"><strong>File Upload:</strong></label>
                 
-                <div>
+                <div> <!- 2 file uploads->
                   <label for="cv">Upload your CV here: </label>  
                   <input type="file">
                 </div>
@@ -132,15 +131,11 @@
                   <label for="cv">Upload your CL here: </label>  
                   <input type="file">
                 </div>
-              
-
                 <div id="submit-button">
                  <input type="button" value="Submit Application">
                 </div>
-
-                </form>
+                </form> <!- Apply Form End ->
               </div>
-
               </div>
               <button type="button" value="close" id="close-button" onclick="closeform()">Close form</button>
             </div>
@@ -149,7 +144,7 @@
           
         </div>
         
-        <div id="footer">
+        <div id="footer"> <!- Footer container ->
           <div id="links">
            <a href="index.html" class="active">Home </a> |
            <a href="team.html">The Team</a> |
@@ -165,5 +160,5 @@
 
 
   </body>
-  <script src="js/script.js"></script>
+  <script src="js/script.js"></script> <!- js script to open and close form ->
 </html>
