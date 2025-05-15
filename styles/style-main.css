@@ -231,7 +231,41 @@ body{ /*prevents overflow*/
 
 }
 
+#video-continer{
+    display: inline-block;
+     background: #EEAECA;
+    background: radial-gradient(circle, rgb(255, 171, 208) 17%, rgba(177, 183, 223, 1) 81%, #c0ddff 100%);
+    padding: 20px;
+    margin-left: 25%;
+    border: black solid 2px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px black,;
+    
+}
 
+#video-continer h3{
+    display: inline;
+    padding:10px;
+    text-align: center;  
+    background-color: white;
+    border: 1px solid black;
+     border-radius: 20px 20px 0px 0px;
+     margin-bottom: 5px;
+     box-shadow: 0px 0px 2px black inset;
+
+}
+
+
+.video{
+
+
+  
+}
+
+.videos iframe{
+    background-color: green;
+    margin-bottom: 10px;
+}
 /*--------------- FAQ --------------------------*/
 
 #fqa-container{ /*flex box for FAQ*/
@@ -345,6 +379,30 @@ body{ /*prevents overflow*/
 }
 
 
+table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+  box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.467);
+  text-align: center;
+
+
+}
+
+th {
+    background-color: rgb(34, 109, 238);
+    box-shadow: 0px 0px 1px inset black;
+}
+
+td{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 2px inset rgb(72, 72, 72);
+    padding: 5px;
+
+}
+
+table{
+
+}
 
 @media (max-width: 750px){ /**/
     #contact-form{

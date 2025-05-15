@@ -24,7 +24,7 @@ input{ /* input fields*/
     width: 80vw;
     max-width: 800px; 
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid black;
@@ -91,6 +91,19 @@ input{ /* input fields*/
     left: 50vw;
 }
 
+
+
+#radio-button {
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+}
+
+#radio-button-title{
+    background-color: red;
+ 
+}
+
 #close-button:hover{ /*close button when hovered*/
     background-color: brown;
 }
@@ -105,6 +118,7 @@ input{ /* input fields*/
     left: 80px;
     margin-left: 20px;
     padding: 3px; 
+    margin-top: 15px;
 }
 
 #apply-form{ /*top of form*/
