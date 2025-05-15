@@ -1,5 +1,5 @@
 
-#footer{
+#footer{ /*Footer container*/
     z-index: 10;
     background-color: rgb(229, 218, 227);
     box-shadow: rgba(0, 0, 0, 0.836) 0px -2px 15px;
@@ -7,7 +7,7 @@
 
 }
 
-#links{
+#links{ /*links inside footer*/
     position:relative ;
     text-align: center;
     bottom: -30px;
