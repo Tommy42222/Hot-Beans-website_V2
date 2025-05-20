@@ -1,6 +1,6 @@
 
 #header{ /*creates a 1x3 css grid for place the logo, page tile, and social links in*/
-       background-color: rgb(247, 239, 246);
+    background-color: rgb(247, 239, 246);
     position: static;
     z-index: 50;
     box-shadow: 0px 2px 15px black;
@@ -31,8 +31,9 @@
 }
 
 #socials{ /*social links container*/
+    width: 111px;
     display: inline-block;
-    position: absolute;
+    position: relative;
     grid-area: social;
     justify-self: end;
     margin-right: 10px;
