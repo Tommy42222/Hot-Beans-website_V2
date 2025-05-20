@@ -341,7 +341,7 @@ body{ /*prevents overflow*/
     padding: 20px;
     border: black solid 2px;
     border-radius: 25px;
-    margin-left: 50%;
+    margin-left: 25%;
     transition: margin-left 0.2s ease-in-out;
 
 }
@@ -378,12 +378,48 @@ body{ /*prevents overflow*/
 
 }
 
+.extra-info{
+    display: block;
+    margin: 5px;
+    
+    padding-bottom: 10px;
+
+
+}
+
+.extra-info h3{
+    font-size: 175%;
+    margin-top: -5px;
+    margin-bottom: -5px;
+
+}
+
+.extra-info p,table,iframe{
+    display: inline-block;
+    margin-left: 20px;
+     text-shadow: rgba(221, 247, 240, 0.351) 0px 0px 5px;
+
+}
+
+.extra-info table,iframe{
+    margin-top:20px;
+}
+
+.extra-info p{
+    font-size: 115%;
+    font-weight: 400;
+}
+
+#comp-email{
+    margin-top: 60px;
+}
 
 table, th, td {
   border:2px solid black;
   border-collapse: collapse;
   box-shadow: 0px 5px 5px rgba(20, 20, 20, 0.467);
   text-align: center;
+  transform: rotate();
 
 
 }
