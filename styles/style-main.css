@@ -445,7 +445,7 @@ td{
 .extra-info p, iframe, table{
     /* background-color: greenyellow; */
     margin-left: 20px;
-    text-shadow: 0px 0px 5px rgba(180, 212, 216, 0.777);
+    text-shadow: 0px 0px 10px rgb(245, 225, 191);
     
 }
 
