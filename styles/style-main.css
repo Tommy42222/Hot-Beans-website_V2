@@ -231,6 +231,7 @@ body{ /*prevents overflow*/
     transform: scale(1.1);
     background-color: rgb(243, 243, 243);
     box-shadow: black -2px -0px 4px inset;
+    box-shadow: 0px 5px 5px;
 }
  
 .training p{ /*corses descirption text*/
@@ -435,8 +436,41 @@ td{
  
 }
  
-table{
- 
+.extra-info{
+
+    /* background-color: red; */
+    margin-top: 40px;
+}
+
+.extra-info p, iframe, table{
+    /* background-color: greenyellow; */
+    margin-left: 20px;
+    text-shadow: 0px 0px 5px rgba(180, 212, 216, 0.777);
+    
+}
+
+.extra-info h3{
+    font-size: x-large;
+    font-weight: 900;
+    
+}
+
+.extra-info p{
+    
+    margin-top: -15px;
+
+    
+}
+
+#other-contact-options h2{
+    font-size: xx-large;
+    margin-top: -10px;
+}
+
+#contact-description{
+
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
  
 @media (max-width: 750px){ /**/
