@@ -322,6 +322,12 @@ body{ /*prevents overflow*/
     
 }
 
+.question ul{ /*continer for each questions when hovered*/
+
+    display: inline-block;
+    padding-left: 20%;
+    
+}
 
 /*--------------- Contact Us --------------------------*/
 
@@ -341,7 +347,7 @@ body{ /*prevents overflow*/
     padding: 20px;
     border: black solid 2px;
     border-radius: 25px;
-    margin-left: 25%;
+    margin-left: 35%;
     transition: margin-left 0.2s ease-in-out;
 
 }
