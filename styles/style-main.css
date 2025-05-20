@@ -20,6 +20,25 @@ body{ /*prevents overflow*/
     justify-content: center;
   }
  
+  #if_no_script{ /*pop up if JavaScript is disabled on the users browser*/
+    display: none;
+    visibility: hidden;
+    margin-left: 25vw;
+    max-width: 400px;
+    position: fixed;
+    background: #020024;
+    background: linear-gradient(40deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 32%, rgba(255, 0, 0, 1) 55%, rgba(61, 23, 0, 1) 98%);
+    padding: 15px;
+    border: black solid 3px;
+    border-radius: 25px;
+    transform: scale(150%);
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: #404040 1px 1px 5px;
+    box-shadow: black 0px 0px 15px;
+    z-index: 10000;
+    
+  }
  
 /*--------------- General --------------------------*/
  
