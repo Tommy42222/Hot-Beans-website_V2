@@ -141,7 +141,7 @@ input{ /* input fields*/
 
 @media (max-width: 650px) { /* scales with window width*/
     input[type="text"]{
-        width: 70px
+        width: 60px
     }
 }
 
@@ -151,28 +151,31 @@ input{ /* input fields*/
 @media (max-height: 550px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
-        transform: translate(-50%, -50%) scale(0.8);
+        transform: translate(-50%, -50%) scale(0.7);
     }
 }
 
 @media (max-height: 450px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
-        transform: translate(-50%, -50%) scale(0.65);
+        transform: translate(-50%, -50%) scale(0.55);
+       
     }
 }
 
 @media (max-height: 350px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
-        transform: translate(-50%, -50%) scale(0.5);
+        transform: translate(-50%, -50%) scale(0.4);
+       
     }
 }
 
 @media (max-height: 270px) { /* scales with window height*/
     #apply-form-container {
         transform-origin: center center;
-        transform: translate(-50%, -50%) scale(0.4);
+        transform: translate(-50%, -50%) scale(0.3);
+
     }
 }
 
