@@ -1,21 +1,10 @@
 
 
 #nav{ /*Side Navigation container */
-    /*
-    top:0;
-    position: sticky;
-    align-self: start; 
-    height: fit-content; 
-    padding-bottom: 50vh; - makes nav bar sticky*/
-    
     background-color: rgb(241, 67, 67);
     z-index: 1;
     grid-area: n;
-    box-shadow: black 0px 10px 25px
-    
-
-    
-    
+    box-shadow: black 0px 10px 25px  
 }
 
 #nav h3{ /*nav bar title*/

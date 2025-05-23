@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style-main.css" />
     <link rel="stylesheet" href="styles/style-footer.css" />
     <link rel="stylesheet" href="styles/style-apply.css" />
-    <link rel="" href="Images/">
+    <script src="js/script.js"></script> <!- js script to open and close form ->
   </head>
 
   <body>
@@ -63,7 +63,7 @@
          
               <p class="description">If you want to get in touch. You can reach out through our contact form, send us an email, or give us a call. Whether it’s a big idea or a quick question, the Hot Beans team is ready to help. Get in touch today!</p>
               
-              <div class="form">
+              <div class="form"> <!-- contact form for sending Hot Beans a message -->
                 <div id="contact-form">
               <div id="form-title">
                 <h3>Contact Form</h3>
@@ -74,10 +74,12 @@
                 <label for="name"> Name:</label>
                 <input type="text" id="contact-name">
                 </div>
+                
                 <div>
                 <label for="email">Email address</label>
                 <input type="text">
               </div>
+
                 <div id="contact-select">
                 <label for="reason">Puppose of message*</label>
                 <select name="reason" id="reason">
@@ -88,10 +90,12 @@
                   <option value="Other">Other</option>
                 </select>
               </div>
+
               <div id="messagebox">
                 <label for="message">Message</label>
                 <textarea type="text" rows="3" cols="30" id="contact-message"> </textarea>
                 </div>
+
                 <div id="contact-button">
                   <button>Send Message</button>
                 </div>
@@ -101,7 +105,7 @@
 
 
 
-              <div id="other-contact-options">
+              <div id="other-contact-options"> <!-- Extra contact options for Hot Beans-->
                 <h2>Extra Contact Information</h2>
                 <p id="contact-description">If you want to contact us through more traditional means. The information can be found below.</p>
                   
@@ -126,7 +130,7 @@
                   United Kingdom</p> 
                 </div>
 
-                <div id="open-times" class="extra-info">
+                <div id="open-times" class="extra-info"> <!-- 2x6 table showing office opening hours -->
                   <h3>Office opening hours</h3>
                   <table>
                     <tr>
@@ -152,7 +156,7 @@
                 </div>
 
 
-                <div id="google-map-title" class="extra-info">
+                <div id="google-map-title" class="extra-info"> <!-- an enbbed google maps link to the physical office location in london-->
                   <h3>Where we are located</h3>
                   <div id="maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d341.9519447666556!2d-0.17086917878062946!3d51.51827722948402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab3888969f1%3A0x7dc6ba91a840fe95!2sWest%20Two%20Health%2C%2033-35%20Praed%20St%2C%20Tyburnia%2C%20London%20W2%201NR!5e0!3m2!1sen!2suk!4v1747738214510!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -271,5 +275,4 @@
 
 
   </body>
-  <script src="js/script.js"></script>
 </html>
