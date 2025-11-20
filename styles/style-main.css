@@ -392,7 +392,6 @@ body{ /*prevents overflow*/
   gap: 15px;
   background: #f5f5f5;
   padding: 10px;
-}
 
 /* Each item card */
 .store_item {
@@ -403,7 +402,17 @@ body{ /*prevents overflow*/
   border-radius: 6px;
   overflow: hidden;
   padding: 10px;
+  max-width: 150px;
 }
+
+
+
+.store_item img{
+    height: 100px;
+}
+
+}
+
 
 /* Responsive breakpoint */
 @media (max-width: 768px) {
