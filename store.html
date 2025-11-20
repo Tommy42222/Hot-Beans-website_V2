@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--COMMENT IMPORTANT STUFF!!!!-->
+  <head>
+    <title>Hot Beans Company Website: Store</title>
+    <meta charset="UTF-8" />
+       <link rel="stylesheet" href="styles/style-header.css" />
+    <link rel="stylesheet" href="styles/style-nav.css" />
+    <link rel="stylesheet" href="styles/style-main.css" />
+    <link rel="stylesheet" href="styles/style-footer.css" />
+    <link rel="stylesheet" href="styles/style-apply.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body class="faq-page">
+  
+    <div id="container">
+
+        <div id="header">
+          <div id="logo">
+            <a href="index.html"><img src="images/Logo/HotBeans2.png" alt=""></a>
+          </div>
+            <div id="title">
+
+              
+            </div>
+        
+              <div id="socials"> <!-Social media links->
+              <a href="https:/facebook.com"><img src="images/socals/facebook.jpg" alt=""></a>
+              <a href="https:/x.com"><img src="images/socals/x.jpg" alt=""></a>
+              <a href="https:/linkedin.com"><img src="images/socals/linkedin.jpg" alt=""></a>
+          </div>
+        </div>
+
+        <div id="nav">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="faq.html" >FAQ</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="Store.html " class="active">Store</a></li>
+          </ul>
+        </div>
+
+        <div id="main"> 
+
+          <div id="pagetitle">
+            <h2 >Frequently Asked Questions</h2>
+          </div>
+
+            <noscript>
+            <div id="if_no_script" style="visibility: visible; display: block;">
+                <h1>ATTENTION!</h1>
+                <p>This website require javascript to properly function. <br> Please turn off whatever is blocking javascript from running and reload the page. <br> <br> Thanks!</p>
+              </div>
+              </noscript>
+              
+          <div class="content">
+
+            <div id="fqa-container"> <!-- Flex container for questions and answers-->
+
+              <div class="description">
+                <p><em>Please scroll down and see the most Frequently asked questions we get from potental employees</em></p>
+              </div>
+
+            </div>
+            
+          </div>
+    
+  
+          <button type="button" value="open" id="apply-button" onclick="openform()">Apply Here</button>
+
+            <div id="apply-form-container">
+              <div id="apply-form">
+
+                <div id="apply-title">
+                   <h1>Apply Here</h1></div>
+                <div id="personal-info">
+                  
+                <form>
+                  <label for="" class="field-title"><strong>Personal Information:</strong></label>
+                  <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                 
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname"  id="lanme">
+                  </div> 
+
+                <div id="select">
+                  <label for="gender">Select your gender:</label>
+                  <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="male">Non-Binary</option>
+                    <option value="male">Other</option>
+                    <option value="male">Prefer not to say</option>
+                  </select>
+
+                </div>
+                <div>
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" name="dob" id="dob">
+                </div>
+              </div>
+              <div>
+                <div id="contact-info">
+                <div>
+                  <label for="contact info" class="field-title"><strong>Contact Info:</strong></label>
+                </div>
+             
+                  <label for="Phone-Number">Phone-Number:</label>
+                  <input type="text" id="Phone-Number" name="Phone-Number">
+               
+                  <label for="emal">Email:</label>
+                  <input type="text" name="email" id="email">
+                </div>
+              </div>
+              <div id="file-upload">
+                <label for="" class="field-title"><strong>File Upload:</strong></label>
+                
+                <div>
+                  <label for="cv">Upload your CV here: </label>  
+                  <input type="file">
+                </div>
+                <div>
+                  <label for="cv">Upload your CL here: </label>  
+                  <input type="file">
+                </div>
+              
+
+                <div id="radio-button">
+                  <label for="" class="field-title">Which role are you applying for?</label>
+   
+                
+                  <label for="">Web Developer >></label>
+                  <input type="radio" name="job-role" value="Web Developer">
+                   <label for="">UI/UX designer >></label>
+                  <input type="radio" name="job-role" value="UI/UX designer">
+                   <label for="">Business analyst >></label>
+                  <input type="radio" name="job-role" value="Business analyst">
+                   <label for="">Project manager >></label>
+                  <input type="radio" name="job-role" value="Project man">
+                </div>
+
+                <div id="submit-button">
+                 <input type="button" value="Submit Application">
+                </div>
+
+                
+                
+                </form>
+              </div>
+
+              </div>
+              <button type="button" value="close" id="close-button" onclick="closeform()">Close form</button>
+            </div>
+
+       
+          
+        </div>
+        
+        <div id="footer">
+          <div id="links">
+           <a href="index.html">Home </a> |
+           <a href="team.html" >The Team</a> |
+           <a href="training.html" >Training</a> |
+           <a href="faq.html" class="active">FAQ</a> |
+           <a href="contact.html">contact us</a>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+
+
+
+  </body>
+
+</html>
