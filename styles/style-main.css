@@ -373,8 +373,8 @@ body{ /*prevents overflow*/
 #store-container {
   display: flex;
   flex-direction: column;
-  height: 500px; /* adjust as needed */
-  padding: 25px;
+
+
   width: 100%;
 }
 
@@ -386,13 +386,15 @@ body{ /*prevents overflow*/
 
 /* Lower store section: default 1x4 grid */
 #store_lower {
-  flex: ;
+    margin-top: 10vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 15px;
-  background: #f5f5f5;
-  padding: 10px;
-
+  grid-template-columns: repeat(4, 20vw); /* 4 equal columns */
+  gap: 10px;
+  background-color: rgb(238, 180, 34);
+  box-shadow: black 0px 5px 10px, 0px -5px 10px;
+  padding: 50px 50px;
+  width: 100%;
+}
 /* Each item card */
 .store_item {
   display: grid;
@@ -403,28 +405,47 @@ body{ /*prevents overflow*/
   overflow: hidden;
   padding: 10px;
   max-width: 150px;
+  box-shadow: black 5px 5px 3px;
+  border: solid black 2px;
 }
-
 
 
 .store_item img{
     height: 100px;
 }
 
+
+.store_item:hover{
+    transition:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 0.15s;
+    scale: 1.05;
 }
 
 
+
+
 /* Responsive breakpoint */
-@media (max-width: 768px) {
+
+
+/* Medium screens: switch to 2x2 grid */
+@media (max-width: 1000px) {
   #store_lower {
-    grid-template-columns: 1fr; /* switch to 1 column */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Small screens: switch to 1x4 column (stacked) */
+@media (max-width: 600px) {
+  #store_lower {
+    grid-template-columns: 1fr; /* single column */
+
   }
 }
 
 
 /* Image section */
 .store_item .image {
-  background: #eee;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,10 +454,9 @@ body{ /*prevents overflow*/
 }
 
 /* Info section */
-.store_tem .info {
+.store_item .info {
   text-align: center;
-  font-size: 14px;
-  padding: 8px;
+  font-weight: 800;
 }
 
 /* Cart button */
@@ -450,11 +470,15 @@ body{ /*prevents overflow*/
   font-weight: bold;
   border-radius: 4px;
   transition: background 0.3s ease;
+  transition: font-size 0.1s ease-out;
   padding: 10px;
 }
 
 .store_item .cart:hover {
-  background: #005a9e;}
+  background: #005a9e;
+  scale: 1.05;    
+  font-size: 110%;
+}
 
 
 
@@ -671,6 +695,7 @@ td{
     .training h2{
         font-size: medium;
     }
+
 }
  
 @media (min-width: 960px) { /*reshapes meet the team  layout based on window width*/
