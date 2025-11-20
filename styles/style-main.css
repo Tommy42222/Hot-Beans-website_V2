@@ -259,6 +259,69 @@ body{ /*prevents overflow*/
     text-align: start;
  
 }
+
+
+#testimonial-container{ /*creates 2x2 grid for diferent cources*/
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    padding-left: 20px;
+    min-width: 200px;
+    grid-auto-flow: row;
+    
+}
+ 
+.testimonial{ /*creates 2x2 grid for each course in the origonal 2x2 grid*/
+    display: grid;
+    grid-template:
+    "t p" auto
+    "t p" auto;
+    grid-template-columns: 150px minmax(80px auto);
+    margin: 20px;
+    background-color: #e4e4e4;
+    border: solid black 3px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: black -5px -0px 10px inset;
+    transform: scale(1);
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+ 
+}
+ 
+.testimonial:hover{ /*coreses when hovered on*/
+    transform: scale(1.1);
+    transition: 1.5s;
+    background-color: rgb(243, 243, 243);
+    box-shadow: black -2px -0px 4px inset;
+    box-shadow: 0px 5px 5px;
+}
+ 
+.testimonial p{ /*corses descirption text*/
+    grid-area: p;
+    margin-left: 5px;
+    text-align: start;
+   
+}
+ 
+ 
+ 
+.testimonial a{ /*off site links to course*/
+    margin-top: 5px;
+    grid-area: t;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: center;
+    order: 2;
+   
+}
+ 
+.testimonial h2{ /*course title*/
+    grid-area:t;
+    order: 1;
+    text-align: start;
+ 
+}
+
+
  
 #video-continer{
     display: inline-block;
@@ -295,6 +358,12 @@ body{ /*prevents overflow*/
     background-color: green;
     margin-bottom: 10px;
 }
+
+
+
+
+
+
 /*--------------- FAQ --------------------------*/
  
 #fqa-container{ /*flex box for FAQ*/
