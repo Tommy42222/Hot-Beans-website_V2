@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="styles/style-main.css" />
     <link rel="stylesheet" href="styles/style-footer.css" />
     <link rel="stylesheet" href="styles/style-apply.css" />
-    <script src="js/script.js"></script>
+
   </head>
 
   <body class="faq-page">
-  
     <div id="container">
 
         <div id="header">
@@ -59,33 +58,59 @@
               
           <div class="content">
 
-            <div id="store-container"> <!-- Flex container for questions and answers-->
+            
+
+
+            <div id="store-container"> <!-- Flex container for the storepage -->
+  
+
 
               <div class="description">
                 <p><em>Please Find below a selection of of Hot'Beans branded merchandise</em></p>
               </div>
 
+            
+
+        
+                <button id="openCartBtn" class="cart_button">Open Cart</button>
+                <button id="closeCartBtn" class="cart_button"style="display:none;">Close Cart</button>
+
+              <!-- Cart Sidebar -->
+              <div id="cartSidebar" class="cart-sidebar">
+                <h2>Your Cart</h2>
+                <ul id="cartItems"></ul>
+                <div class="cart-total">
+                  <hr>
+                  <strong>Total: £<span id="cartTotal">0.00</span></strong>
+                </div>
+                <div id="toCheckoutButton">
+                <button id="toCheckout" class="checkoutButton"> To checkout</button>
+                </div>
+              </div>
+
               <div id="store_lower">
-   
+                
+
+                
               <div class="store_item">
                 <div class="image"> <img src="images/merch/menT.png" alt=""></div>
                 <div class="info">Tshirt-Male<br>£25.99</div>
-                <button class="cart">Add to Cart</button>
+                <button class="cart" onclick="addToCart('Tshirt-Male', 25.99)">Add to Cart</button>
                 </div>
                 <div class="store_item">
                 <div class="image"> <img src="images/merch/WomanT.png" alt=""></div>
                 <div class="info">Tshirt-Female<br>£25.99</div>
-                <button class="cart">Add to Cart</button>
+                <button class="cart" onclick="addToCart('Tshirt-Female', 25.99)">Add to Cart</button>
                 </div>
                 <div class="store_item">
                 <div class="image"> <img src="images/merch/Mug.png" alt=""></div>
                 <div class="info">Branded mug<br>£19.99</div>
-                <button class="cart">Add to Cart</button>
+                <button class="cart" onclick="addToCart('Mug', 19.99)">Add to Cart</button>
                 </div>
                 <div class="store_item">
                 <div class="image"> <img src="images/merch/Iphone16Case.png" alt=""></div>
                 <div class="info">Branded Iphone 16 case<br>£15.99</div>
-                <button class="cart">Add to Cart</button>
+                <button class="cart" onclick="addToCart('Iphone16Case', 15.99)">Add to Cart</button>
                 </div>
                 
 
@@ -208,7 +233,7 @@
 
 
 
-
+    <script src="js/script.js"></script>
   </body>
 
 </html>
