@@ -306,7 +306,8 @@ body{ /*prevents overflow*/
  
  
 .testimonial img{ 
-    height: 200px;
+    height: auto;
+    width: 150px;
     grid-area: i;
     flex-direction: column;
     align-self: center;
@@ -368,7 +369,22 @@ body{ /*prevents overflow*/
     margin-bottom: 10px;
 }
 
-/*--------------- Store --------------------------*/
+
+     
+.testimonial{ /*creates 2x2 grid for each testimonial in the origonal 2x2 grid*/
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 5px;
+}
+
+.testimonial p{
+    padding-right: 10px;
+}
+
+
+}
+
+/*----------------- Store --------------------------*/
 /* Parent container */
 #store-container {
   display: flex;
@@ -816,4 +832,12 @@ td{
 }
  
  
- 
+
+@media (max-width: 1000px) {
+  /* CSS rules here will only apply when the screen is 600px wide or less */
+  .testimonial img{
+    transform: scale(0.85);
+    margin-bottom: 10px;
+  }
+
+}
