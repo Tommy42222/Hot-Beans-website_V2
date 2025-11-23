@@ -306,7 +306,8 @@ body{ /*prevents overflow*/
  
  
 .testimonial img{ 
-    height: 200px;
+    height: auto;
+    width: 150px;
     grid-area: i;
     flex-direction: column;
     align-self: center;
@@ -366,6 +367,19 @@ body{ /*prevents overflow*/
 .videos iframe{
     background-color: green;
     margin-bottom: 10px;
+}
+
+@media (max-width: 800) {
+    .testimonial img {
+        margin-top: -30px;
+        margin-right: 20px;
+        transform: scale(0.6);
+        margin-bottom: 30px;
+    }
+
+
+
+
 }
 
 /*--------------- Store --------------------------*/
