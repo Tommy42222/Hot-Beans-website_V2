@@ -306,7 +306,8 @@ body{ /*prevents overflow*/
  
  
 .testimonial img{ 
-    height: 200px;
+    height: auto;
+    width: 150px;
     grid-area: i;
     flex-direction: column;
     align-self: center;
@@ -366,6 +367,29 @@ body{ /*prevents overflow*/
 .videos iframe{
     background-color: green;
     margin-bottom: 10px;
+}
+
+@media (max-width: 800) {
+    .testimonial img {
+        margin-top: -30px;
+        margin-right: 20px;
+        transform: scale(0.6);
+        height: 100px;
+        width: auto;
+    }
+
+     
+.testimonial{ /*creates 2x2 grid for each testimonial in the origonal 2x2 grid*/
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 5px;
+}
+
+.testimonial p{
+    padding-right: 10px;
+}
+
+
 }
 
 /*--------------- Store --------------------------*/
