@@ -261,7 +261,7 @@ body{ /*prevents overflow*/
 }
 
 
-#testimonial-container{ /*creates 2x2 grid for diferent cources*/
+#testimonial-container{ /*creates 2x2 grid*/
     display: grid;
     grid-template-columns: repeat(2, 50vw);
     padding-left: 20px;
@@ -271,7 +271,7 @@ body{ /*prevents overflow*/
     
 }
  
-.testimonial{ /*creates 2x2 grid for each course in the origonal 2x2 grid*/
+.testimonial{ /*creates 2x2 grid for each testimonial in the origonal 2x2 grid*/
     display: grid;
     grid-template:
     "t i" auto
@@ -288,7 +288,7 @@ body{ /*prevents overflow*/
  
 }
  
-.testimonial:hover{ /*coreses when hovered on*/
+.testimonial:hover{ /*testimonial when hovered on*/
     transform: scale(1.025);
     background-color: #e48015;
     box-shadow: black -2px -0px 4px inset;
@@ -296,7 +296,7 @@ body{ /*prevents overflow*/
     transition: 1.5s;
 }
  
-.testimonial p{ /*corses descirption text*/
+.testimonial p{ /*testimonial descirption text*/
     grid-area: p;
     margin-left: 10px;
     margin-top: -20px;
@@ -305,7 +305,7 @@ body{ /*prevents overflow*/
  
  
  
-.testimonial img{ /*off site links to course*/
+.testimonial img{ 
     height: 200px;
     grid-area: i;
     flex-direction: column;
@@ -373,8 +373,6 @@ body{ /*prevents overflow*/
 #store-container {
   display: flex;
   flex-direction: column;
-
-
   width: 100%;
 }
 
@@ -395,7 +393,7 @@ body{ /*prevents overflow*/
   padding: 50px 50px;
   width: 100%;
 }
-/* Each item card */
+/* Item card */
 .store_item {
   display: grid;
   grid-template-rows: 2fr 1fr auto; /* image, info, button */
@@ -529,18 +527,19 @@ body{ /*prevents overflow*/
 
 /* Hide cart by default */
 .cart-sidebar {
-  position: fixed;
-  top: 0;
-  right: -400px;   /* off-screen */
-  width: 300px;    /* adjust width */
-  height: 100%;
-      background: #EEAECA;
+    position: fixed;
+    top: 0;
+    right: -400px;   /* off-screen */
+    width: 300px;    /* adjust width */
+    height: 100%;
+    background: #EEAECA;
     background: radial-gradient(circle, rgb(255, 171, 208) 17%, rgba(177, 183, 223, 1) 81%, #c0ddff 100%);
-  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
-  padding: 20px;
-  transition: right 0.3s ease;
-  z-index: 900;
-  border: dotted black 2px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 900;
+    border: dotted black 2px;
+    box-shadow: black -5px -0px 5px inset;
 }
 
 /* When active, slide it in */
